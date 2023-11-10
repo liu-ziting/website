@@ -9,6 +9,11 @@
                     <div class="content-header-info">- 这里是一个收集平时常用网站合集以及个人知识整理的个人站点.</div>
                     <div class="content-header-info">- 本站点Vue3 + Vite + TypeScript 技术栈进行构建</div>
                     <div class="content-header-info">- 并通过 Netlify 进行部署</div>
+                    <div class="content-header-info">
+                        - 历史网站：<a class="link" href="https://lztblog.netlify.app/" target="_blank"
+                            >lztblog.netlify.app</a
+                        >
+                    </div>
                 </div>
                 <div class="content-header-illustration">
                     <img src="https://assets.codepen.io/285131/illustration-2.svg" />
