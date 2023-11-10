@@ -23,7 +23,9 @@ const navigateTo = (to: string) => {
     <div class="index">
         <div class="earmark-app">
             <header class="header">
-                <h1 class="header-logo">Interesting.</h1>
+                <h1 class="header-logo">
+                    <span @click="$router.push('/')" class="underlined underlined--offset">Interesting.</span>
+                </h1>
                 <div class="header-content">
                     <div class="header-search">
                         <input type="text" class="search-field" placeholder="Search..." />
@@ -86,9 +88,12 @@ const navigateTo = (to: string) => {
     display: flex;
     align-items: center;
     .header-logo {
-        font-family: 'Lora', sans-serif;
-        font-weight: 700;
-        font-size: 1.5rem;
+        span {
+            font-family: 'Lora', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
     }
 
     .header-content {
