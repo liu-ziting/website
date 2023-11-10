@@ -51,7 +51,7 @@ const webList = ref([
                 logo: 'https://logo.clearbit.com/godly.cloud',
                 name: 'Godly',
                 link: 'https://godly.website/',
-                slogan: '发现和分享有趣、入门级开源项目的平台'
+                slogan: '国外优秀网站合集'
             }
         ]
     },
