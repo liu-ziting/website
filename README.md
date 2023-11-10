@@ -2,6 +2,8 @@
 
 > A Vue 3.0 + Vite 2.0 + TypeScript template.
 
+[![blog](http://tc.lihail.cn/Fk8hUCKDLQgTbfP0Gd2QXTHaY_nP)](http://tc.lihail.cn/Fk8hUCKDLQgTbfP0Gd2QXTHaY_nP)
+
 ## Build Setup
 
 ```bash
