@@ -144,3 +144,12 @@ textarea {
 #nprogress .bar {
     background: #161616 !important;
 }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}

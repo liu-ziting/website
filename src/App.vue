@@ -32,7 +32,9 @@ const navigateTo = (to: string) => {
                         </button>
                     </div>
                     <button class="header-avatar">
-                        <span class="header-avatar-img"></span>
+                        <a href="https://github.com/liu-ziting" target="_blank">
+                            <span class="header-avatar-img"></span>
+                        </a>
                         <span class="header-avatar-name">Liu Ziting</span>
                     </button>
                 </div>

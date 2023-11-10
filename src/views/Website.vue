@@ -89,9 +89,9 @@ const webList = ref([
                 <div class="content-header-inner">
                     <h1 class="content-header-title">常用优秀网站收藏<br />Website</h1>
                     <div class="content-header-info">项目部署、UI设计、优秀代码、图标库...</div>
-                    <a target="_blank" href="https://lztblog.netlify.app/" class="small">
+                    <a target="_blank" href="https://lztweb.netlify.app/" class="small">
                         <div class="icon" v-html="getSvgIcon('Right')"></div>
-                        lztblog.netlify.app</a
+                        lztweb.netlify.app</a
                     >
                 </div>
                 <div class="content-header-illustration">

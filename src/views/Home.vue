@@ -10,8 +10,8 @@
                     <div class="content-header-info">- 本站点Vue3 + Vite + TypeScript 技术栈进行构建</div>
                     <div class="content-header-info">- 并通过 Netlify 进行部署</div>
                     <div class="content-header-info">
-                        - 历史网站：<a class="link" href="https://lztblog.netlify.app/" target="_blank"
-                            >lztblog.netlify.app</a
+                        - 历史网站：<a class="link" href="https://lztweb.netlify.app/" target="_blank"
+                            >lztweb.netlify.app</a
                         >
                     </div>
                 </div>
@@ -63,7 +63,6 @@
 <style lang="scss" scoped>
 .content-header {
     display: flex;
-    margin-top: 50px;
 }
 
 .content-header-inner {
