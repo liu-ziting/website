@@ -105,7 +105,7 @@ const toggleDescription = (index: number) => {
                             <h3 class="summary-date">2023年</h3>
                             <span class="summary-amount"></span>
                         </div>
-                        <div class="list" v-for="(item, index) in blogList" :key="index" v-auto-animate>
+                        <div class="list" v-for="(item, index) in blogList" :key="index">
                             <div class="list-item">
                                 <div class="list-item-company" @click="openLayer(item.src, item.type)">
                                     <figure class="list-item-company-logo">
