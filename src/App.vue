@@ -14,14 +14,14 @@ const { getSvgIcon } = useSvgIcons()
 const isRouteActive = (to: string) => {
     return route.path === to
 }
-const navigateTo = (to: string) => {
-    router.push(to)
-}
+
+import MobileNav from './components/MobileNav.vue'
 </script>
 
 <template>
     <div class="index">
-        <div class="earmark-app">
+        <mobile-nav />
+        <div class="main-app">
             <header class="header">
                 <h1 class="header-logo">
                     <span @click="$router.push('/')" class="underlined underlined--offset">Interesting.</span>
@@ -41,7 +41,7 @@ const navigateTo = (to: string) => {
                     </button>
                 </div>
             </header>
-            <main class="main">
+            <main class="main" v-auto-animate>
                 <nav class="nav">
                     <ul class="tabs">
                         <li class="tab" v-for="item in navList" :key="item.name">
@@ -65,13 +65,13 @@ const navigateTo = (to: string) => {
 <style lang="scss" scoped>
 .index {
     line-height: 1.5;
-    min-height: 100vh;
+    // min-height: 100vh;
     background-color: #faf5f1;
     color: #162121;
     padding: 2rem;
 }
 
-.earmark-app {
+.main-app {
     box-shadow:
         0 0 2px 0 rgba(#000, 0.1),
         0 15px 30px rgba(#444, 0.1);
@@ -81,7 +81,7 @@ const navigateTo = (to: string) => {
     margin-left: auto;
     margin-right: auto;
     background-color: #fcfcfc;
-    min-height: calc(100vh - 4rem);
+    min-height: calc(100vh - 10rem);
 }
 
 .header {

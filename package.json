@@ -1,5 +1,5 @@
 {
-  "name": "vue3-test",
+  "name": "liuziting",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.1",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "vue": "^3.3.4",

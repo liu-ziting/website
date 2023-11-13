@@ -10,7 +10,7 @@
                     <div class="content-header-info">- 本站点Vue3 + Vite + TypeScript 技术栈进行构建</div>
                     <div class="content-header-info">- 并通过 Netlify 进行部署</div>
                     <div class="content-header-info">
-                        - 历史网站：<a class="link" href="https://lztweb.netlify.app/" target="_blank"
+                        - 历史站点：<a class="link" href="https://lztweb.netlify.app/" target="_blank"
                             >lztweb.netlify.app</a
                         >
                     </div>
@@ -19,7 +19,7 @@
                     <img src="https://assets.codepen.io/285131/illustration-2.svg" />
                 </div>
             </div>
-            <div v-if="false" class="wrapper">
+            <div class="wrapper">
                 <div class="sofa">
                     <div class="sofa-cushion"></div>
                     <div class="sofa-bottom-l"></div>
@@ -67,19 +67,20 @@
 
 .content-header-inner {
     flex: 1;
+    font-family: 'ALIBABA';
 }
 
 .content-header-title {
     font-size: 2.5rem;
     font-weight: 700;
-    font-family: 'Lora', sans-serif;
+    font-family: 'ALIBABA';
     line-height: 1.125;
 }
 .content-header-tag {
     font-size: 2.5rem;
     display: block;
     font-weight: 400;
-    font-family: 'Space Mono', monospace;
+    font-family: 'ALIBABA';
     color: #63c4b1;
     margin-top: 0.5em;
 }
@@ -104,7 +105,8 @@ $yellow: #ffd100;
 .wrapper {
     position: relative;
     width: 300px;
-
+    margin: 30px auto;
+    display: none;
     &:before {
         content: '';
         background: rgba(#fff, 0.04);
@@ -643,5 +645,11 @@ $yellow: #ffd100;
     50% {
         border-color: transparent;
     }
+}
+footer {
+    width: 100%;
+    float: left;
+    text-align: center;
+    margin-top: 100px;
 }
 </style>

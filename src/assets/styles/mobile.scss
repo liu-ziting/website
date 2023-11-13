@@ -1,0 +1,75 @@
+@media screen and (max-width: 768px) {
+    .header {
+        display: none !important;
+    }
+
+    .nav {
+        display: none !important;
+    }
+
+    .main-app {
+        padding: 20px !important;
+        overflow: hidden !important;
+        margin-top: 60px;
+    }
+
+    .index {
+        padding: 10px !important;
+    }
+
+    .main {
+        display: block !important;
+        column-gap: 0 !important;
+        margin: 0 !important;
+    }
+
+
+    .list-item-company-logo {
+        display: none;
+    }
+
+    .list-item-company-info {
+        margin: 0 !important;
+    }
+
+    .content-header .content-header-title {
+        font-size: 1.5rem !important;
+    }
+
+    .list .cards {
+        width: calc(50% - 10px) !important;
+    }
+
+    .list .cards:nth-child(odd) {
+        margin-right: 0 !important;
+    }
+
+    .content-header .content-header-illustration {
+        display: none !important;
+    }
+
+    .card-list {
+        width: calc(50% - 10px) !important;
+    }
+
+    .card-list:nth-child(odd) {
+        margin-right: 0 !important;
+    }
+
+    .mobile-nav {
+        display: block !important;
+    }
+
+    .wrapper {
+        display: block !important;
+    }
+
+    .content-header-tag {
+        font-size: 1.8rem !important;
+    }
+
+    .overview {
+        border: none !important;
+        padding: 0 !important;
+    }
+}
