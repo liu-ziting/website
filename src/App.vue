@@ -45,7 +45,7 @@ const handleEnterKey = () => {
                     </button>
                 </div>
             </header>
-            <main class="main">
+            <main class="main" v-auto-animate>
                 <nav class="nav">
                     <ul class="tabs">
                         <li class="tab" v-for="item in navList" :key="item.name">
