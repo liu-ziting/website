@@ -12,10 +12,13 @@ const openLayer = async (src: string) => {
     showLayer.value = true
     loading.value = true
     link.value = src
+    setTimeout(() => {
+        loading.value = false
+    }, 1000)
 }
-const handleLoad = () => {
-    loading.value = false
-}
+// const handleLoad = () => {
+//     loading.value = false
+// }
 const openLink = () => {
     window.open(link.value)
 }
@@ -90,7 +93,7 @@ defineExpose({ openLayer })
                 </svg>
             </div>
             <Loading class="loading" v-show="loading" />
-            <iframe v-show="!loading" :src="link" @load="handleLoad" />
+            <iframe v-show="!loading" :src="link" />
         </div>
     </div>
 </template>
