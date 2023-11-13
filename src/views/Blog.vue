@@ -5,6 +5,7 @@ import cursorImage from '@/assets/blog/cursor.png'
 import jsImage from '@/assets/blog/js.png'
 import yxalImage from '@/assets/blog/yxal.png'
 import qdzdImage from '@/assets/blog/qdzd.png'
+import PopupLayer from '@/components/PopupLayer.vue'
 import { ref } from 'vue'
 import { useSvgIcons } from '../lib/svgIcons'
 const { getSvgIcon } = useSvgIcons()
@@ -17,7 +18,8 @@ const blogList = ref([
         time: '2023-03-18',
         src: 'https://paragraph.xyz/@lzt/preview/9RCkzzDpDakfx6Qof3Qd',
         img: gptImage,
-        showDescription: false
+        showDescription: false,
+        type: true
     },
     {
         title: 'Vercel+Railway部署Typecho动态博客.',
@@ -27,7 +29,8 @@ const blogList = ref([
         time: '2022-06-15',
         src: 'https://paragraph.xyz/@lzt/preview/z2wfOEx5417LB22TOxy4',
         img: typechoImage,
-        showDescription: false
+        showDescription: false,
+        type: true
     },
     {
         title: 'Cursor一个集成了GPT-4的编辑器.',
@@ -36,7 +39,8 @@ const blogList = ref([
         time: '2023-10-25',
         src: 'https://paragraph.xyz/@lzt/preview/1LlkQGo7MJ8nOyUx9JVV',
         img: cursorImage,
-        showDescription: false
+        showDescription: false,
+        type: true
     },
     {
         title: '前端工具类网站.',
@@ -46,7 +50,8 @@ const blogList = ref([
         time: '2023-09-30',
         src: 'https://gamma.app/public/-8sse4vampaeyogm',
         img: qdzdImage,
-        showDescription: false
+        showDescription: false,
+        type: false
     },
     {
         title: '优秀网站案例.',
@@ -55,7 +60,8 @@ const blogList = ref([
         time: '2023-09-31',
         src: 'https://gamma.app/public/-u01r2v0m32l9t21',
         img: yxalImage,
-        showDescription: false
+        showDescription: false,
+        type: false
     },
     {
         title: 'Js中?.、??、??=的用法及使用场景.',
@@ -65,12 +71,20 @@ const blogList = ref([
         time: '2023-11-08',
         src: 'https://paragraph.xyz/@lzt/preview/QBemWyLa2SewXYa3PNQ4',
         img: jsImage,
-        showDescription: false
+        showDescription: false,
+        type: true
     }
 ])
-const openLink = (url: string) => {
-    window.open(url)
+
+const popupLayer = ref()
+const openLayer = (url: string, type: boolean) => {
+    if (type) {
+        popupLayer.value.openLayer(url)
+    } else {
+        window.open(url)
+    }
 }
+
 const toggleDescription = (index: number) => {
     blogList.value[index].showDescription = !blogList.value[index].showDescription
 }
@@ -93,7 +107,7 @@ const toggleDescription = (index: number) => {
                         </div>
                         <div class="list" v-for="(item, index) in blogList" :key="index" v-auto-animate>
                             <div class="list-item">
-                                <div class="list-item-company" @click="openLink(item.src)">
+                                <div class="list-item-company" @click="openLayer(item.src, item.type)">
                                     <figure class="list-item-company-logo">
                                         <img v-if="item.img" :src="item.img" />
                                         <span v-else class="list-item-company-logo--square" />
@@ -125,6 +139,7 @@ const toggleDescription = (index: number) => {
                 </section>
             </div>
         </div>
+        <popup-Layer ref="popupLayer" />
     </div>
 </template>
 
@@ -183,7 +198,6 @@ const toggleDescription = (index: number) => {
     .list-item-description {
         font-size: 14px;
         color: #363434;
-        padding-left: 75px;
     }
 }
 

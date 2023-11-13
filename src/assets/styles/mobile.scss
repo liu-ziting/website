@@ -58,6 +58,10 @@
 
     .mobile-nav {
         display: block !important;
+
+        a {
+            margin: 0 5px !important;
+        }
     }
 
     .wrapper {
@@ -71,5 +75,22 @@
     .overview {
         border: none !important;
         padding: 0 !important;
+    }
+
+    .layer .content {
+        width: 100vw !important;
+        height: 100vh !important;
+        border-radius: 0 !important;
+    }
+
+    .layer .content .svg-box p {
+        width: 50%;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .fullScreenSvg {
+        display: none;
     }
 }

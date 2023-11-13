@@ -16,6 +16,10 @@ const isRouteActive = (to: string) => {
 }
 
 import MobileNav from './components/MobileNav.vue'
+
+const handleEnterKey = () => {
+    window.open('https://lztweb.netlify.app/')
+}
 </script>
 
 <template>
@@ -28,7 +32,7 @@ import MobileNav from './components/MobileNav.vue'
                 </h1>
                 <div class="header-content">
                     <div class="header-search">
-                        <input type="text" class="search-field" placeholder="Search..." />
+                        <input @keyup.enter="handleEnterKey" type="text" class="search-field" placeholder="Search..." />
                         <button type="submit" class="search-btn">
                             <div class="icon" v-html="getSvgIcon('Search')"></div>
                         </button>
