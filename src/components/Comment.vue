@@ -20,7 +20,4 @@ onMounted(() => {
 <template>
     <div id="gitalk-container"></div>
 </template>
-<style lang="scss" scoped>
-#gitalk-container {
-}
-</style>
+<style lang="scss" scoped></style>

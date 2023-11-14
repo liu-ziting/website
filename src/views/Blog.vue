@@ -17,7 +17,7 @@ const blogList = ref([
         content:
             '本文将详细介绍如何配置和部署chatGPT，以及如何使用Vercel平台进行自动化部署和持续集成，无需编写任何代码，即可轻松地将chatGPT部署到云端，实现智能对话和自然语言处理的应用场景。',
         tag: ['GPT', 'Vercel'],
-        time: '2023-03-18',
+        time: '2022-03-18',
         src: 'https://paragraph.xyz/@lzt/preview/9RCkzzDpDakfx6Qof3Qd',
         img: gptImage,
         showDescription: false,
@@ -38,7 +38,7 @@ const blogList = ref([
         title: 'Cursor一个集成了GPT-4的编辑器.',
         content: '编辑器+GPT-4 ，程序员写代码利器',
         tag: ['GPT', 'Cursor'],
-        time: '2023-10-25',
+        time: '2022-10-25',
         src: 'https://paragraph.xyz/@lzt/preview/1LlkQGo7MJ8nOyUx9JVV',
         img: cursorImage,
         showDescription: false,
@@ -137,6 +137,13 @@ const toggleDescription = (index: number) => {
                                 {{ item.content }}
                             </p>
                         </div>
+                    </div>
+                </section>
+                <section class="overview">
+                    <header class="overview-header">
+                        <h2 class="overview-header-title">留言板</h2>
+                    </header>
+                    <div class="overview-body">
                         <Comment />
                     </div>
                 </section>
