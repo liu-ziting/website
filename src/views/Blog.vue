@@ -6,6 +6,8 @@ import jsImage from '@/assets/blog/js.png'
 import yxalImage from '@/assets/blog/yxal.png'
 import qdzdImage from '@/assets/blog/qdzd.png'
 import PopupLayer from '@/components/PopupLayer.vue'
+
+import Comment from '@/components/Comment.vue'
 import { ref } from 'vue'
 import { useSvgIcons } from '../lib/svgIcons'
 const { getSvgIcon } = useSvgIcons()
@@ -135,6 +137,7 @@ const toggleDescription = (index: number) => {
                                 {{ item.content }}
                             </p>
                         </div>
+                        <Comment />
                     </div>
                 </section>
             </div>
