@@ -1,4 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PopupLayer from '@/components/PopupLayer.vue'
+import { ref } from 'vue'
+const popupLayer = ref()
+const openLayer = (url: string, type: boolean) => {
+    if (type) {
+        popupLayer.value.openLayer(url)
+    } else {
+        window.open(url)
+    }
+}
+</script>
 <template>
     <div class="home">
         <div class="content">
@@ -13,6 +24,25 @@
                         - 历史站点：<a class="link" href="https://lztweb.netlify.app/" target="_blank"
                             >lztweb.netlify.app</a
                         >
+                    </div>
+                    <div class="content-header-info" @click="openLayer('https://excalidraw.com', true)">
+                        <a class="link" href="javascript:;">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                class="w-6 h-6"
+                            >
+                                <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                                />
+                            </svg>
+                            来灵感了，画下来~
+                        </a>
                     </div>
                 </div>
                 <div class="content-header-illustration">
@@ -56,6 +86,8 @@
                     </div>
                 </div>
             </div>
+
+            <popup-Layer ref="popupLayer" />
         </div>
     </div>
 </template>
@@ -85,8 +117,11 @@
     margin-top: 0.5em;
 }
 .content-header-info {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     font-weight: 600;
+    svg {
+        width: 22px;
+    }
 }
 
 .content-header-illustration {
@@ -105,7 +140,7 @@ $yellow: #ffd100;
 .wrapper {
     position: relative;
     width: 300px;
-    margin: 30px auto;
+    margin: 70px auto;
     display: none;
     &:before {
         content: '';

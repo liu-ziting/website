@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
+import { useRoute } from 'vue-router'
 import { useSvgIcons } from './lib/svgIcons'
 const navList = ref([
     { name: 'Home', to: '/' },
@@ -9,7 +9,6 @@ const navList = ref([
     { name: 'Movie', to: '/movie' }
 ])
 const route = useRoute()
-const router = useRouter()
 const { getSvgIcon } = useSvgIcons()
 const isRouteActive = (to: string) => {
     return route.path === to
