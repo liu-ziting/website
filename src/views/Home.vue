@@ -25,6 +25,7 @@ const openLayer = (url: string, type: boolean) => {
                             >lztweb.netlify.app</a
                         >
                     </div>
+
                     <div class="content-header-info" @click="openLayer('https://excalidraw.com', true)">
                         <a class="link" href="javascript:;">
                             <svg

@@ -48,10 +48,86 @@ const webList = ref([
                 slogan: '发现和分享有趣、入门级开源项目的平台'
             },
             {
+                logo: 'https://assets-global.website-files.com/5ce10a4c0b5f0b05f522e746/633701e39b4c607d4375f447_toools-logo-dark.svg',
+                name: 'Toools',
+                link: 'https://www.toools.design',
+                slogan: '发现非常有用的设计资源和工具'
+            },
+            {
+                logo: 'https://ph-files.imgix.net/f65a61c7-e83f-4a59-ab89-a6e11b5afaff.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=72&h=72&fit=crop&bg=0fff&dpr=1',
+                name: 'A-fresh',
+                link: 'https://a-fresh.website/',
+                slogan: '精心挑选的网站和组件灵感库'
+            },
+            {
+                logo: 'https://ph-files.imgix.net/72024972-7850-497e-9c4c-6d473f9d640a.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=64&h=64&fit=crop&dpr=1',
+                name: 'Prettyfolio',
+                link: 'https://www.prettyfolio.com/',
+                slogan: '发现专为您策划的最佳作品集网站'
+            },
+            {
+                logo: 'https://uiswipe.com/images/logo.svg',
+                name: 'Uiswipe',
+                link: 'https://uiswipe.com/',
+                slogan: '发现顶级 Web UI 设计 再也不会遇到创意障碍'
+            },
+            {
                 logo: 'https://logo.clearbit.com/godly.cloud',
                 name: 'Godly',
                 link: 'https://godly.website/',
                 slogan: '国外优秀网站合集'
+            }
+        ]
+    },
+    {
+        title: 'AI平台',
+        list: [
+            {
+                logo: 'https://ph-files.imgix.net/593894d0-536b-47e6-9a15-cb8afc0159e5.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&w=64&h=64&fit=crop&dpr=1',
+                name: 'Claude',
+                link: 'https://claude.ai/',
+                slogan: '媲美GPT，简洁易用的AI助手'
+            },
+            {
+                logo: 'https://llava.hliu.cc/assets/logo-0a070fcf.svg',
+                name: 'LLaVA',
+                link: 'https://llava.hliu.cc/',
+                slogan: '大语言视觉助手'
+            },
+            {
+                logo: 'https://chat.xlang.ai/_next/static/media/logo_color.1eecbbbd.svg',
+                name: 'xlang',
+                link: 'https://chat.xlang.ai/zh',
+                slogan: 'XLang实验室提供大模型数据助手'
+            },
+            {
+                logo: 'https://llava.hliu.cc/assets/logo-0a070fcf.svg',
+                name: 'v0.dev',
+                link: 'https://v0.dev/',
+                slogan: 'Vercel提供支持的AI生成页面'
+            },
+            {
+                logo: 'https://function12.io/assets/images/header/logo.svg',
+                name: 'Function12',
+                link: 'https://function12.io',
+                slogan: '可导入Figma生成Html代码'
+            }
+        ]
+    },
+    {
+        title: '演示',
+        list: [
+            {
+                logo: 'https://d2x8ygf1qnoedj.cloudfront.net/images/Gamma_V1_Icon_only_4.gif',
+                name: 'Gamma',
+                link: 'https://gamma.app/',
+                slogan: '快速、简单的共享和展示您的作品的方式'
+            },
+            {
+                logo: 'https://logo.clearbit.com/pitch.com',
+                name: 'Pitch',
+                link: 'https://pitch.com/',
+                slogan: '以前所未有的速度创建、共享和分析演示文稿'
             }
         ]
     },
@@ -77,6 +153,23 @@ const webList = ref([
                 type: 'SVG图标',
                 link: 'https://icons.download/',
                 slogan: '免费svg图标下载库'
+            }
+        ]
+    },
+    {
+        title: '其他',
+        list: [
+            {
+                logo: 'https://console.raylink.live/static/media/logo.8317ef75afb9227efa04ecab000c8f2d.svg',
+                name: 'Raylink',
+                link: 'https://www.raylink.live/',
+                slogan: '专为视觉行业打造的真高清、超流畅远程控制软件'
+            },
+            {
+                logo: 'http://tc.lihail.cn/Fh3MXdCCyvhmKqCSaHy0sq4ZvLk8',
+                name: 'Lottielab',
+                link: 'https://www.lottielab.com/',
+                slogan: '从Figma导入使用时间线制作动画并导出'
             }
         ]
     }
