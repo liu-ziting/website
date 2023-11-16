@@ -166,7 +166,7 @@ const webList = ref([
                 slogan: '专为视觉行业打造的真高清、超流畅远程控制软件'
             },
             {
-                logo: 'http://tc.lihail.cn/Fh3MXdCCyvhmKqCSaHy0sq4ZvLk8',
+                logo: 'https://airbnb.io/lottie/images/Introduction_00_sm.gif',
                 name: 'Lottielab',
                 link: 'https://www.lottielab.com/',
                 slogan: '从Figma导入使用时间线制作动画并导出'
