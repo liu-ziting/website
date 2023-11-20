@@ -111,6 +111,12 @@ const webList = ref([
                 name: 'Function12',
                 link: 'https://function12.io',
                 slogan: '可导入Figma生成Html代码'
+            },
+            {
+                logo: 'https://seekai.tools/static/media/new_logo.829b4ad1dcd3942080932c3c4c30d090.svg',
+                name: 'Seekai',
+                link: 'https://seekai.tools/ai-tools',
+                slogan: '轻松发现最佳 AI 工具'
             }
         ]
     },
