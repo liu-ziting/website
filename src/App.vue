@@ -37,7 +37,7 @@ const handleEnterKey = () => {
                         </button>
                     </div>
                     <button class="header-avatar">
-                        <a href="https://github.com/liu-ziting" target="_blank">
+                        <a href="https://bento.me/liuziting" target="_blank">
                             <span class="header-avatar-img"></span>
                         </a>
                         <span class="header-avatar-name">Liu Ziting</span>
