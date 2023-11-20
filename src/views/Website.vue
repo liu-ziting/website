@@ -170,6 +170,12 @@ const webList = ref([
                 name: 'Lottielab',
                 link: 'https://www.lottielab.com/',
                 slogan: '从Figma导入使用时间线制作动画并导出'
+            },
+            {
+                logo: 'https://www.msdmanuals.cn/Content/Images/Redesign/mm_logo.svg',
+                name: 'Msdmanuals',
+                link: 'https://www.msdmanuals.cn/?ruleredirectid=14',
+                slogan: '默沙东诊疗手册'
             }
         ]
     }
