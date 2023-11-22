@@ -47,7 +47,7 @@ const openLayer = (url: string, type: boolean) => {
                     </div>
                 </div>
                 <div class="content-header-illustration">
-                    <img src="https://assets.codepen.io/285131/illustration-2.svg" />
+                    <img src="@/assets/tx.png" />
                 </div>
             </div>
             <div class="wrapper">
@@ -129,9 +129,11 @@ const openLayer = (url: string, type: boolean) => {
     display: flex;
     justify-content: flex-end;
     flex: 1;
+    svg,
     img {
-        max-width: 400px;
-        max-height: 300px;
+        max-width: 500px;
+        max-height: 400px;
+        margin-top: -40px;
     }
 }
 
