@@ -83,7 +83,7 @@ const blogList = ref([
             'Clarity是一款免费且开源的工具，旨在帮助网站管理员深入了解他们的用户行为，优化用户体验，并最终提升网站的转化率。',
         tag: ['clarity', '埋点'],
         time: '2023-11-08',
-        src: 'https://paragraph.xyz/@lzt/preview/UzkHbidOjU8n2SUsmX1K',
+        src: 'https://paragraph.xyz/@lzt/preview/gLbtVxD4EjAqmNhUd5Rd',
         img: clarityImage,
         showDescription: false,
         type: true
