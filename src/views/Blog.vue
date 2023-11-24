@@ -3,6 +3,7 @@ import gptImage from '@/assets/blog/gpt.png'
 import typechoImage from '@/assets/blog/typecho.png'
 import cursorImage from '@/assets/blog/cursor.png'
 import jsImage from '@/assets/blog/js.png'
+import clarityImage from '@/assets/blog/clarity.png'
 import yxalImage from '@/assets/blog/yxal.png'
 import qdzdImage from '@/assets/blog/qdzd.png'
 import PopupLayer from '@/components/PopupLayer.vue'
@@ -73,6 +74,17 @@ const blogList = ref([
         time: '2023-11-08',
         src: 'https://paragraph.xyz/@lzt/preview/QBemWyLa2SewXYa3PNQ4',
         img: jsImage,
+        showDescription: false,
+        type: true
+    },
+    {
+        title: '微软免费的埋点工具【clarity】.',
+        content:
+            'Clarity是一款免费且开源的工具，旨在帮助网站管理员深入了解他们的用户行为，优化用户体验，并最终提升网站的转化率。',
+        tag: ['clarity', '埋点'],
+        time: '2023-11-08',
+        src: 'https://paragraph.xyz/@lzt/preview/UzkHbidOjU8n2SUsmX1K',
+        img: clarityImage,
         showDescription: false,
         type: true
     }
