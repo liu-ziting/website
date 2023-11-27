@@ -17,7 +17,7 @@ const isRouteActive = (to: string) => {
 import MobileNav from './components/MobileNav.vue'
 
 const handleEnterKey = () => {
-    window.open('https://lztweb.netlify.app/')
+    alert('暂不支持搜索~ 再等等！')
 }
 </script>
 
