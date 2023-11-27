@@ -45,7 +45,7 @@ const openLayer = (url: string, type: boolean) => {
                             来灵感了，画下来~
                         </a>
                     </div>
-                    <div class="content-header-info">
+                    <!-- <div class="content-header-info">
                         <a
                             href="https://www.producthunt.com/posts/1-7f5cfcd5-d7c7-47e0-99ba-69c4189cb10e?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-1&#0045;7f5cfcd5&#0045;d7c7&#0045;47e0&#0045;99ba&#0045;69c4189cb10e"
                             target="_blank"
@@ -56,7 +56,7 @@ const openLayer = (url: string, type: boolean) => {
                                 width="250"
                                 height="54"
                         /></a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="content-header-illustration">
                     <img src="@/assets/tx.png" />

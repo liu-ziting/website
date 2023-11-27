@@ -113,6 +113,12 @@ const webList = ref([
                 slogan: '可导入Figma生成Html代码'
             },
             {
+                logo: 'https://saasaitools.com/storage/2022/11/saasaitools_logo_white.png',
+                name: 'SaasAiTools',
+                link: 'https://saasaitools.com/',
+                slogan: '发现您的下一个生成人工智能工具'
+            },
+            {
                 logo: 'https://seekai.tools/static/media/new_logo.829b4ad1dcd3942080932c3c4c30d090.svg',
                 name: 'Seekai',
                 link: 'https://seekai.tools/ai-tools',
@@ -1955,6 +1961,7 @@ const webList = ref([
                 display: block;
                 width: 40px;
                 height: 40px;
+                object-fit: cover;
             }
             span {
                 width: 40px;
