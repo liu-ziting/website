@@ -76,6 +76,42 @@ const webList = ref([
                 name: 'Godly',
                 link: 'https://godly.website/',
                 slogan: '国外优秀网站合集'
+            },
+            {
+                logo: 'https://www.cssdesignawards.com/imgs/logo.svg',
+                name: 'Cssdesignawards',
+                link: 'https://www.cssdesignawards.com/',
+                slogan: '全球优秀CSS网页设计奖提名网'
+            },
+            {
+                logo: '',
+                name: 'Csswinner',
+                link: 'https://www.csswinner.com/',
+                slogan: '优秀CSS网站界面和交互设计获奖作品'
+            },
+            {
+                logo: '',
+                name: 'Bestwebsite',
+                link: 'https://bestwebsite.gallery/',
+                slogan: '漂亮的酷站收集展示'
+            },
+            {
+                logo: 'https://d3alngem7je9z2.cloudfront.net/sitesee.svg',
+                name: 'Sitesee',
+                link: 'https://sitesee.co/',
+                slogan: '收录漂亮的界面设计网站'
+            },
+            {
+                logo: 'https://www.calltoidea.com/application/images//logo-calltoidea-home.png',
+                name: 'Calltoidea',
+                link: 'https://www.calltoidea.com/',
+                slogan: '收集优秀UI组件元素设计的站点'
+            },
+            {
+                logo: 'https://assets.uigarage.net/content/uploads/2023/09/wdx-uig-ad-desktop.png',
+                name: 'Uigarage',
+                link: 'https://uigarage.net/',
+                slogan: 'UI灵感收集聚合站点'
             }
         ]
     },
@@ -129,6 +165,124 @@ const webList = ref([
                 name: 'Autodraw',
                 link: 'https://www.autodraw.com/',
                 slogan: '根据你的随意涂画生成简笔画'
+            },
+            {
+                logo: 'https://www.shejibaozang.com/wp-content/uploads/thumb/2023/05/fill_w60_h60_g0_mark_1684291596-%E4%B8%8B%E8%BD%BD-2.png',
+                name: 'Perplexity',
+                link: 'https://www.perplexity.ai/',
+                slogan: '智能总结并展示信息源'
+            }
+        ]
+    },
+    {
+        title: '图片处理',
+        list: [
+            {
+                logo: 'https://dq2gn5p12glyq.cloudfront.net/p/assets/images/logo_7a507d6a6b4a2a6c4c7578a7b88d1c19.svg',
+                name: 'Pixian',
+                link: 'https://pixian.ai/',
+                slogan: 'Remove Image Backgrounds'
+            },
+            {
+                logo: '',
+                name: 'RemoveBg',
+                link: 'https://www.remove.bg/zh/upload',
+                slogan: '上传图片，消除背景'
+            },
+            {
+                logo: '',
+                name: 'Clippingmagic',
+                link: 'https://zh.clippingmagic.com/',
+                slogan: '魔术般地删除图像背景'
+            },
+            {
+                logo: 'https://photoscissors.com/images/photoscissors-icon-128.png',
+                name: 'Photoscissors',
+                link: 'https://photoscissors.com/',
+                slogan: 'Remove Image Background'
+            },
+            {
+                logo: 'data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20viewBox%3D%220%200%2028%2028%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0D%0A%20%3Cpath%20d%3D%22m2%200h24a2%202%200%200%201%202%202v24a2%202%200%200%201-2%202h-24a2%202%200%200%201-2-2v-24a2%202%200%200%201%202-2%22%20fill%3D%22%233755dc%22%2F%3E%0D%0A%20%3Cpath%20d%3D%22m21.9%204.5h-17.1v17h6.2v-3.8h-2.4v-9.4h9.5v2.9h3.8v-6.7%22%20fill%3D%22%23fff%22%20fill-opacity%3D%22.5%22%2F%3E%0D%0A%20%3Cpath%20d%3D%22m23.7%2013.8h-10.1v10.2h10.1zm-7.2%203h4.2v4.2h-4.2z%22%20fill%3D%22%23fff%22%2F%3E%0D%0A%3C%2Fsvg%3E%0D%0A',
+                name: 'Recompressor',
+                link: 'https://recompressor.com/',
+                slogan: '图像优化压缩'
+            },
+            {
+                logo: 'https://tinypng.com/static/images/tinify-logo.svg',
+                name: 'Tinypng',
+                link: 'https://tinypng.com/',
+                slogan: '智能webp、png和jpeg压缩'
+            },
+            {
+                logo: '',
+                name: 'Shaoapp',
+                link: 'https://shaoapp.com/image',
+                slogan: '智能图像优化减小文件大小并保持画质清晰'
+            },
+            {
+                logo: '',
+                name: 'Jpeg.io',
+                link: 'https://www.jpeg.io/',
+                slogan: '将任何主要图像格式转换为高度优化的jpeg'
+            },
+            {
+                logo: 'https://imagecompressor.com/images/imagecompressor/logo.svg',
+                name: 'Imagecompressor',
+                link: 'https://imagecompressor.com/zh/',
+                slogan: '使用最佳优化和压缩算法来达到最小尺寸的JPEG、GIF和PNG图像'
+            },
+            {
+                logo: '',
+                name: 'Squoosh',
+                link: 'https://squoosh.app/',
+                slogan: '在线配置参数优化你的图片'
+            },
+            {
+                logo: '',
+                name: 'Ezgif',
+                link: 'https://ezgif.com/',
+                slogan: '在线 gif 制作器和图像编辑器'
+            },
+            {
+                logo: 'https://makeagif.com/images/logo.svg',
+                name: 'Makeagif',
+                link: 'https://makeagif.com/',
+                slogan: 'The home for all your GIFs'
+            },
+            {
+                logo: 'https://makeagif.com/images/logo.svg',
+                name: 'Replicate',
+                link: 'https://replicate.com/jingyunliang/swinir?prediction=izlzspzbz4is3qhjper4vj5pbm',
+                slogan: 'AI图片修复'
+            },
+            {
+                logo: '',
+                name: 'Waifu2x',
+                link: 'https://waifu2x.udp.jp/',
+                slogan: '图片智能算法无损放大'
+            }
+        ]
+    },
+    {
+        title: '代码片段',
+        list: [
+            {
+                logo: 'https://uiverse.io/build/_assets/logo-OR7QQX33.svg',
+                name: 'Uiverse',
+                link: 'https://uiverse.io',
+                slogan: '适用于任何项目的开源 UI 元素'
+            },
+            {
+                logo: '',
+                name: 'Cssfx',
+                link: 'https://cssfx.netlify.app/',
+                slogan: '按钮、过渡、移入等小特效'
+            },
+            {
+                logo: '',
+                name: 'Animista',
+                link: 'https://animista.net/play/basic/flip-scale-2',
+                slogan: 'cssAnimation动画在线编辑复制'
             }
         ]
     },
@@ -156,7 +310,7 @@ const webList = ref([
         ]
     },
     {
-        title: '图标库',
+        title: '图标/动画/插画',
         list: [
             {
                 logo: '',
@@ -170,13 +324,47 @@ const webList = ref([
                 link: 'https://iconbuddy.app/',
                 slogan: '免费icon素材图标库,可修改颜色'
             },
-
             {
                 logo: '',
                 name: 'Icons',
-                type: 'SVG图标',
                 link: 'https://icons.download/',
                 slogan: '免费svg图标下载库'
+            },
+            {
+                logo: 'https://assets-global.website-files.com/63a9cb71c629474d4ae334b9/651fe7ba92f9ba32692bd314_logo%20manypixels.svg',
+                name: 'Manypixels',
+                link: 'https://www.manypixels.co/gallery',
+                slogan: '免版权小人场景矢量插画素材'
+            },
+            {
+                logo: 'https://storyset.com/images/logo.svg',
+                name: 'Storyset',
+                link: 'https://storyset.com/',
+                slogan: '可定制插画并制作动画下载'
+            },
+            {
+                logo: '',
+                name: 'Transhumans',
+                link: 'https://www.transhumans.xyz/',
+                slogan: '动漫风格插画'
+            },
+            {
+                logo: '',
+                name: 'Preloaders',
+                link: 'https://icons8.com/preloaders/',
+                slogan: 'Loading加载动画在线制作'
+            },
+            {
+                logo: 'https://airbnb.io/lottie/images/Introduction_00_sm.gif',
+                name: 'Lottielab',
+                link: 'https://www.lottielab.com/',
+                slogan: '从Figma导入使用时间线制作动画并导出'
+            },
+            {
+                logo: '',
+                name: 'Texturer',
+                link: 'http://texturer.com/',
+                slogan: '3D建模纹理特效素材'
             }
         ]
     },
@@ -190,10 +378,22 @@ const webList = ref([
                 slogan: '专为视觉行业打造的真高清、超流畅远程控制软件'
             },
             {
-                logo: 'https://airbnb.io/lottie/images/Introduction_00_sm.gif',
-                name: 'Lottielab',
-                link: 'https://www.lottielab.com/',
-                slogan: '从Figma导入使用时间线制作动画并导出'
+                logo: '',
+                name: '屏幕共享',
+                link: 'https://www.webrtc-experiment.com/Pluginfree-Screen-Sharing/#407307319699959',
+                slogan: '免费的网络RTC屏幕共享插件'
+            },
+            {
+                logo: '',
+                name: 'Carbon',
+                link: 'https://carbon.now.sh/?bg=rgba(171%2C%20184%2C%20195%2C%201)&t=seti&wt=none&l=javascript&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=48px&ph=32px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&ts=false',
+                slogan: '代码片段分享图片制作'
+            },
+            {
+                logo: 'https://s1.xmcdn.com/yx/web-multitrack-recording/last/build/static/media/cloud_logo.e1b190aa.png',
+                name: '喜马拉雅云剪辑',
+                link: 'https://yunjianji.ximalaya.com/',
+                slogan: '免费在线音频剪辑工具'
             },
             {
                 logo: 'https://www.msdmanuals.cn/Content/Images/Redesign/mm_logo.svg',
@@ -216,6 +416,7 @@ const webList = ref([
                         <div class="icon" v-html="getSvgIcon('Right')"></div>
                         lztweb.netlify.app</a
                     > -->
+                    <div class="content-header-text">* 如遇网站打不过或加载慢，则需要科学上网</div>
                 </div>
                 <div class="content-header-illustration">
                     <svg
@@ -1933,6 +2134,10 @@ const webList = ref([
         margin-top: 1.5rem;
         font-weight: 600;
     }
+    .content-header-text {
+        margin-top: 1.2rem;
+        color: #abafb4;
+    }
 
     .content-header-illustration {
         display: flex;
@@ -1974,7 +2179,7 @@ const webList = ref([
                 width: 40px;
                 height: 40px;
                 object-fit: cover;
-                background-color: #ffffff;
+                background-color: #f1f1f1;
                 border-radius: 5px;
             }
             span {
@@ -1982,7 +2187,8 @@ const webList = ref([
                 height: 40px;
                 display: block;
                 border-radius: 5px;
-                background: linear-gradient(160deg, #f29873, #f0f4f5);
+                font-family: 'ALIBABA';
+                background: linear-gradient(160deg, #f29873, #ecc1af);
                 color: #fff;
             }
         }
