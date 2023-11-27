@@ -123,6 +123,12 @@ const webList = ref([
                 name: 'Seekai',
                 link: 'https://seekai.tools/ai-tools',
                 slogan: '轻松发现最佳 AI 工具'
+            },
+            {
+                logo: '',
+                name: 'Autodraw',
+                link: 'https://www.autodraw.com/',
+                slogan: '根据你的随意涂画生成简笔画'
             }
         ]
     },
@@ -140,6 +146,12 @@ const webList = ref([
                 name: 'Pitch',
                 link: 'https://pitch.com/',
                 slogan: '以前所未有的速度创建、共享和分析演示文稿'
+            },
+            {
+                logo: 'https://assets-global.website-files.com/6462308e001a70f67d5e9d4d/646e1ff01aab0050cd260743_logo.svg',
+                name: 'Median',
+                link: 'https://median.co/',
+                slogan: '将任意一个网站转换为App，支持免费下载apk'
             }
         ]
     },
@@ -199,11 +211,11 @@ const webList = ref([
             <div class="content-header">
                 <div class="content-header-inner">
                     <h1 class="content-header-title">常用优秀网站收藏<br />Website</h1>
-                    <div class="content-header-info">项目部署、UI设计、优秀代码、图标库...</div>
-                    <a target="_blank" href="https://lztweb.netlify.app/" class="small">
+                    <div class="content-header-info">项目部署、UI设计、社区、AI、演示、图标库...</div>
+                    <!-- <a target="_blank" href="https://lztweb.netlify.app/" class="small">
                         <div class="icon" v-html="getSvgIcon('Right')"></div>
                         lztweb.netlify.app</a
-                    >
+                    > -->
                 </div>
                 <div class="content-header-illustration">
                     <svg
@@ -1962,6 +1974,8 @@ const webList = ref([
                 width: 40px;
                 height: 40px;
                 object-fit: cover;
+                background-color: #ffffff;
+                border-radius: 5px;
             }
             span {
                 width: 40px;
