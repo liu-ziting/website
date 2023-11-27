@@ -30,16 +30,22 @@ const webList = ref([
         title: '社区',
         list: [
             {
-                logo: 'https://logo.clearbit.com/codepen.io',
-                name: 'Codepen',
-                link: 'https://codepen.io',
-                slogan: '在线代码编辑器和前端开发社区,发掘特效创意'
-            },
-            {
                 logo: 'https://logo.clearbit.com/producthunt.com',
                 name: 'Producthunt',
                 link: 'https://www.producthunt.com/',
                 slogan: '向用户展示新兴科技产品、应用程序和创意项目'
+            },
+            {
+                logo: 'https://www.cssdesignawards.com/imgs/logo.svg',
+                name: 'Cssdesignawards',
+                link: 'https://www.cssdesignawards.com/',
+                slogan: '全球优秀CSS网页设计奖提名网'
+            },
+            {
+                logo: '',
+                name: 'Csswinner',
+                link: 'https://www.csswinner.com/',
+                slogan: '优秀CSS网站界面和交互设计获奖作品'
             },
             {
                 logo: 'https://logo.clearbit.com/github.com',
@@ -76,18 +82,6 @@ const webList = ref([
                 name: 'Godly',
                 link: 'https://godly.website/',
                 slogan: '国外优秀网站合集'
-            },
-            {
-                logo: 'https://www.cssdesignawards.com/imgs/logo.svg',
-                name: 'Cssdesignawards',
-                link: 'https://www.cssdesignawards.com/',
-                slogan: '全球优秀CSS网页设计奖提名网'
-            },
-            {
-                logo: '',
-                name: 'Csswinner',
-                link: 'https://www.csswinner.com/',
-                slogan: '优秀CSS网站界面和交互设计获奖作品'
             },
             {
                 logo: '',
@@ -229,7 +223,7 @@ const webList = ref([
                 logo: 'https://imagecompressor.com/images/imagecompressor/logo.svg',
                 name: 'Imagecompressor',
                 link: 'https://imagecompressor.com/zh/',
-                slogan: '使用最佳优化和压缩算法来达到最小尺寸的JPEG、GIF和PNG图像'
+                slogan: '使用最佳优化和压缩算法来达到最小尺寸的图像'
             },
             {
                 logo: '',
@@ -266,6 +260,12 @@ const webList = ref([
     {
         title: '代码片段',
         list: [
+            {
+                logo: 'https://logo.clearbit.com/codepen.io',
+                name: 'Codepen',
+                link: 'https://codepen.io',
+                slogan: '在线代码编辑器和前端开发社区,发掘特效创意'
+            },
             {
                 logo: 'https://uiverse.io/build/_assets/logo-OR7QQX33.svg',
                 name: 'Uiverse',
@@ -416,7 +416,7 @@ const webList = ref([
                         <div class="icon" v-html="getSvgIcon('Right')"></div>
                         lztweb.netlify.app</a
                     > -->
-                    <div class="content-header-text">* 如遇网站打不过或加载慢，则需要科学上网</div>
+                    <div class="content-header-text">* 如遇网站加载慢或打不开，则需要科学上网</div>
                 </div>
                 <div class="content-header-illustration">
                     <svg
@@ -2136,7 +2136,7 @@ const webList = ref([
     }
     .content-header-text {
         margin-top: 1.2rem;
-        color: #abafb4;
+        color: #ecc1af;
     }
 
     .content-header-illustration {
