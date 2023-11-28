@@ -20,7 +20,7 @@ const blogList = ref([
             'Astro.js提供了一个现代，高效，易于使用的框架，使得开发个人博客变得更加简单和直接，Astro用于构建更快网站的全新 web 架构、移除客户端上高资源消耗的激活过程、没有JavaScript 运行时开销来减慢你的速度。',
         tag: ['Astro', 'Netlify'],
         time: '2023-11-28',
-        src: 'https://paragraph.xyz/@lzt/preview/ie61ekbzZpISzDD92MVs',
+        src: 'https://paragraph.xyz/@lzt/preview/Tn9XvwcAHXwnbDq9oT7c',
         img: astroImage,
         showDescription: false,
         type: true
