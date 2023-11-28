@@ -15,66 +15,13 @@ import { useSvgIcons } from '../lib/svgIcons'
 const { getSvgIcon } = useSvgIcons()
 const blogList = ref([
     {
-        title: 'Chatgpt3.5+Vercel，零代码在线部署到云端.',
+        title: '基于Astro.js + Netlify搭建个人博客.',
         content:
-            '本文将详细介绍如何配置和部署chatGPT，以及如何使用Vercel平台进行自动化部署和持续集成，无需编写任何代码，即可轻松地将chatGPT部署到云端，实现智能对话和自然语言处理的应用场景。',
-        tag: ['GPT', 'Vercel'],
-        time: '2022-03-18',
-        src: 'https://paragraph.xyz/@lzt/preview/9RCkzzDpDakfx6Qof3Qd',
-        img: gptImage,
-        showDescription: false,
-        type: true
-    },
-    {
-        title: 'Vercel+Railway部署Typecho动态博客.',
-        content:
-            'Vercel和Railway是两个流行的云平台，它们可以帮助开发者快速部署和管理各种应用程序。在这里，我们将探讨如何使用Vercel和Railway来部署Typecho动态博客，从而使您的博客更加稳定和高效。',
-        tag: ['Vercel', 'Typecho', 'Railway'],
-        time: '2022-06-15',
-        src: 'https://paragraph.xyz/@lzt/preview/z2wfOEx5417LB22TOxy4',
-        img: typechoImage,
-        showDescription: false,
-        type: true
-    },
-    {
-        title: 'Cursor一个集成了GPT-4的编辑器.',
-        content: '编辑器+GPT-4 ，程序员写代码利器',
-        tag: ['GPT', 'Cursor'],
-        time: '2022-10-25',
-        src: 'https://paragraph.xyz/@lzt/preview/1LlkQGo7MJ8nOyUx9JVV',
-        img: cursorImage,
-        showDescription: false,
-        type: true
-    },
-    {
-        title: '前端工具类网站.',
-        content:
-            '本次分享的内容主要有：前端部署平台、灵感代码网站、前端框架、GPT平台、AI生成页面、大模型、以及图标库、AI色彩等其他工具',
-        tag: ['Website', 'PPT'],
-        time: '2023-09-30',
-        src: 'https://gamma.app/public/-8sse4vampaeyogm',
-        img: qdzdImage,
-        showDescription: false,
-        type: false
-    },
-    {
-        title: '优秀网站案例.',
-        content: '推荐一些优秀的前端网站，涵盖了出色的设计和创新的思路',
-        tag: ['Case', 'PPT'],
-        time: '2023-09-31',
-        src: 'https://gamma.app/public/-u01r2v0m32l9t21',
-        img: yxalImage,
-        showDescription: false,
-        type: false
-    },
-    {
-        title: 'Js中?.、??、??=的用法及使用场景.',
-        content:
-            '深入了解JavaScript中的可选链操作符(?.)、空值合并操作符(??)和逻辑赋值操作符(??=)的用法及其在实际开发中的应用场景。',
-        tag: ['Js'],
-        time: '2023-11-08',
-        src: 'https://paragraph.xyz/@lzt/preview/QBemWyLa2SewXYa3PNQ4',
-        img: jsImage,
+            'Astro.js提供了一个现代，高效，易于使用的框架，使得开发个人博客变得更加简单和直接，Astro用于构建更快网站的全新 web 架构、移除客户端上高资源消耗的激活过程、没有JavaScript 运行时开销来减慢你的速度。',
+        tag: ['Astro', 'Netlify'],
+        time: '2023-11-28',
+        src: 'https://paragraph.xyz/@lzt/preview/ie61ekbzZpISzDD92MVs',
+        img: astroImage,
         showDescription: false,
         type: true
     },
@@ -90,13 +37,66 @@ const blogList = ref([
         type: true
     },
     {
-        title: '基于Astro.js + Netlify搭建个人博客.',
+        title: 'Js中?.、??、??=的用法及使用场景.',
         content:
-            'Astro.js提供了一个现代，高效，易于使用的框架，使得开发个人博客变得更加简单和直接、用于构建更快网站的全新 web 架构、移除客户端上高资源消耗的激活过程、没有JavaScript 运行时开销来减慢你的速度。',
-        tag: ['Astro', 'Netlify'],
-        time: '2023-11-28',
-        src: 'https://paragraph.xyz/@lzt/preview/ie61ekbzZpISzDD92MVs',
-        img: astroImage,
+            '深入了解JavaScript中的可选链操作符(?.)、空值合并操作符(??)和逻辑赋值操作符(??=)的用法及其在实际开发中的应用场景。',
+        tag: ['Js'],
+        time: '2023-11-08',
+        src: 'https://paragraph.xyz/@lzt/preview/QBemWyLa2SewXYa3PNQ4',
+        img: jsImage,
+        showDescription: false,
+        type: true
+    },
+    {
+        title: '优秀网站案例.',
+        content: '推荐一些优秀的前端网站，涵盖了出色的设计和创新的思路',
+        tag: ['Case', 'PPT'],
+        time: '2023-09-31',
+        src: 'https://gamma.app/public/-u01r2v0m32l9t21',
+        img: yxalImage,
+        showDescription: false,
+        type: false
+    },
+    {
+        title: '前端工具类网站.',
+        content:
+            '本次分享的内容主要有：前端部署平台、灵感代码网站、前端框架、GPT平台、AI生成页面、大模型、以及图标库、AI色彩等其他工具',
+        tag: ['Website', 'PPT'],
+        time: '2023-09-30',
+        src: 'https://gamma.app/public/-8sse4vampaeyogm',
+        img: qdzdImage,
+        showDescription: false,
+        type: false
+    },
+    {
+        title: 'Cursor一个集成了GPT-4的编辑器.',
+        content: '编辑器+GPT-4 ，程序员写代码利器',
+        tag: ['GPT', 'Cursor'],
+        time: '2022-10-25',
+        src: 'https://paragraph.xyz/@lzt/preview/1LlkQGo7MJ8nOyUx9JVV',
+        img: cursorImage,
+        showDescription: false,
+        type: true
+    },
+    {
+        title: 'Vercel+Railway部署Typecho动态博客.',
+        content:
+            'Vercel和Railway是两个流行的云平台，它们可以帮助开发者快速部署和管理各种应用程序。在这里，我们将探讨如何使用Vercel和Railway来部署Typecho动态博客，从而使您的博客更加稳定和高效。',
+        tag: ['Vercel', 'Typecho', 'Railway'],
+        time: '2022-06-15',
+        src: 'https://paragraph.xyz/@lzt/preview/z2wfOEx5417LB22TOxy4',
+        img: typechoImage,
+        showDescription: false,
+        type: true
+    },
+    {
+        title: 'Chatgpt3.5+Vercel，零代码在线部署到云端.',
+        content:
+            '本文将详细介绍如何配置和部署chatGPT，以及如何使用Vercel平台进行自动化部署和持续集成，无需编写任何代码，即可轻松地将chatGPT部署到云端，实现智能对话和自然语言处理的应用场景。',
+        tag: ['GPT', 'Vercel'],
+        time: '2022-03-18',
+        src: 'https://paragraph.xyz/@lzt/preview/9RCkzzDpDakfx6Qof3Qd',
+        img: gptImage,
         showDescription: false,
         type: true
     }
