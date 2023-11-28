@@ -6,6 +6,7 @@ import jsImage from '@/assets/blog/js.png'
 import clarityImage from '@/assets/blog/clarity.png'
 import yxalImage from '@/assets/blog/yxal.png'
 import qdzdImage from '@/assets/blog/qdzd.png'
+import astroImage from '@/assets/blog/astro.png'
 import PopupLayer from '@/components/PopupLayer.vue'
 
 import Comment from '@/components/Comment.vue'
@@ -85,6 +86,17 @@ const blogList = ref([
         time: '2023-11-24',
         src: 'https://paragraph.xyz/@lzt/preview/gLbtVxD4EjAqmNhUd5Rd',
         img: clarityImage,
+        showDescription: false,
+        type: true
+    },
+    {
+        title: '基于Astro.js + Netlify搭建个人博客.',
+        content:
+            'Astro.js提供了一个现代，高效，易于使用的框架，使得开发个人博客变得更加简单和直接、用于构建更快网站的全新 web 架构、移除客户端上高资源消耗的激活过程、没有JavaScript 运行时开销来减慢你的速度。',
+        tag: ['Astro', 'Netlify'],
+        time: '2023-11-28',
+        src: 'https://paragraph.xyz/@lzt/preview/ie61ekbzZpISzDD92MVs',
+        img: astroImage,
         showDescription: false,
         type: true
     }
