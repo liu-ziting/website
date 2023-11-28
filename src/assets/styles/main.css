@@ -135,10 +135,35 @@ textarea {
 }
 
 /* 自定义滚动条 */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
     cursor: pointer;
+} */
+/* 滚动条的样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    /* 设置滚动条的宽度 */
+}
+
+/* 滚动条轨道的样式 */
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+    /* 设置滚动条轨道的颜色 */
+}
+
+/* 滚动条滑块的样式 */
+::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    /* 设置滚动条滑块的颜色 */
+    border-radius: 10px;
+    /* 设置滚动条滑块的圆角 */
+}
+
+/* 鼠标悬停在滑块上的样式 */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #F29873;
+    /* 设置鼠标悬停时滚动条滑块的颜色 */
 }
 
 #nprogress .bar {
