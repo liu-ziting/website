@@ -165,6 +165,30 @@ const webList = ref([
                 name: 'Perplexity',
                 link: 'https://www.perplexity.ai/',
                 slogan: '智能总结并展示信息源'
+            },
+            {
+                logo: 'https://www.mymap.ai/_nuxt/mymap-ai-logo.080a7e9c.png',
+                name: 'Mymap',
+                link: 'https://www.mymap.ai/mindmap/?ref=producthunt',
+                slogan: 'Ai生成思维导图'
+            },
+            {
+                logo: '',
+                name: 'Pi.ai',
+                link: 'https://pi.ai/talk',
+                slogan: '深度学习和自然语言处理来提供你有用的回答和建议'
+            },
+            {
+                logo: 'https://magicwrite.netlify.app/logo.png',
+                name: 'Magicwrite',
+                link: 'https://magicwrite.netlify.app/?ref=producthunt',
+                slogan: '免费的人工智能作家，无需注册'
+            },
+            {
+                logo: 'https://faucet.openkey.cloud/_next/image?url=%2Flogo.png&w=256&q=75',
+                name: 'ChatGPTAPI水龙头',
+                link: 'https://faucet.openkey.cloud/',
+                slogan: '每24小时可领取一个$1.00令牌用于开发测试 AI 产品.'
             }
         ]
     },
@@ -400,6 +424,36 @@ const webList = ref([
                 name: 'Msdmanuals',
                 link: 'https://www.msdmanuals.cn/?ruleredirectid=14',
                 slogan: '默沙东诊疗手册'
+            },
+            {
+                logo: 'https://cdn.gallerix.asia/x/src/slogotx.32.png',
+                name: 'Gallerix',
+                link: 'https://gallerix.asia/',
+                slogan: '在线艺术博物馆，欣赏到来自各个时代和风格的绘画作品'
+            },
+            {
+                logo: '',
+                name: 'Hack',
+                link: 'https://hack.chat',
+                slogan: '这是一款最小的、无干扰的聊天应用程序'
+            },
+            {
+                logo: 'https://www.xitongku.com/images/logo2.png',
+                name: 'Xitongku',
+                link: 'https://www.xitongku.com/',
+                slogan: '提供丰富的电脑系统和office软件下载'
+            },
+            {
+                logo: '',
+                name: 'Ripyoutube',
+                link: 'https://ripyoutube.com/zh-cn-1',
+                slogan: '免费的youtube视频下載器，支持转换mp3,mp4格式'
+            },
+            {
+                logo: 'https://m4.publicimg.browser.qq.com/publicimg/nav/qbtool/qbtool-latest.png',
+                name: '腾讯帮小忙',
+                link: 'https://tool.browser.qq.com/',
+                slogan: '免费在线工具箱'
             }
         ]
     }
