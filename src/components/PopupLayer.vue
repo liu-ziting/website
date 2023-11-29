@@ -5,6 +5,7 @@ const link = ref('')
 const loading = ref(true)
 const showLayer = ref(false)
 const fullScreenType = ref(false)
+const copyTip = ref(false)
 const closeLayer = () => {
     showLayer.value = false
 }
@@ -16,6 +17,23 @@ const openLayer = async (src: string) => {
         loading.value = false
     }, 1000)
 }
+const copyLink = () => {
+    // 点击后复制link到剪切板
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(link.value)
+    } else {
+        const input = document.createElement('input')
+        input.value = link.value
+        document.body.appendChild(input)
+        input.select()
+        document.execCommand('copy')
+        document.body.removeChild(input)
+    }
+    copyTip.value = true
+    setTimeout(() => {
+        copyTip.value = false
+    }, 1000)
+}
 // const handleLoad = () => {
 //     loading.value = false
 // }
@@ -23,6 +41,12 @@ const openLink = () => {
     window.open(link.value)
 }
 const fullScreen = () => {
+    // 触发F11的全屏
+    if (document.fullscreenElement) {
+        document.exitFullscreen()
+    } else {
+        document.documentElement.requestFullscreen()
+    }
     fullScreenType.value = !fullScreenType.value
 }
 // 暴露方法和属性给父组件
@@ -32,7 +56,7 @@ defineExpose({ openLayer })
     <div class="layer" v-show="showLayer" @click="closeLayer">
         <div :class="['content', fullScreenType ? 'fullScreen' : '']" @click.stop>
             <div class="svg-box">
-                <p>{{ link }}</p>
+                <p @click="copyLink">{{ link }} <span v-if="copyTip">复制成功！</span></p>
                 <svg
                     @click="closeLayer"
                     xmlns="http://www.w3.org/2000/svg"
@@ -128,6 +152,9 @@ defineExpose({ openLayer })
                 color: #999;
                 line-height: 30px;
                 padding-left: 10px;
+                span {
+                    margin-left: 30px;
+                }
             }
             svg {
                 width: 20px;
@@ -146,13 +173,21 @@ defineExpose({ openLayer })
         height: 100%;
         border-radius: 0;
         box-shadow: none;
+        position: fixed;
+        z-index: 99999999;
     }
     iframe {
         width: 100%;
-        height: calc(100% - 50px);
+        height: calc(100% - 30px);
         border: none;
         overflow: hidden;
         background-color: #fff;
+        border-radius: 0 0 10px 10px;
+    }
+    iframe::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        cursor: pointer;
     }
     .loading {
         display: block;
