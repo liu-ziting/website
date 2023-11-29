@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import { useSvgIcons } from '../lib/svgIcons'
 const { getSvgIcon } = useSvgIcons()
+const lastUpdateTime = ref('2023-11-29')
 const webList = ref([
     {
         title: '部署平台',
@@ -448,6 +449,12 @@ const webList = ref([
                 name: 'Ripyoutube',
                 link: 'https://ripyoutube.com/zh-cn-1',
                 slogan: '免费的youtube视频下載器，支持转换mp3,mp4格式'
+            },
+            {
+                logo: 'https://dlpanda.com/images/LOGO-LONG.png',
+                name: 'Dlpanda',
+                link: 'https://dlpanda.com/zh-CN/xiaohongshu',
+                slogan: '抖音、小红书、X、Ins、Bilibili等网站视频解析无水印下载'
             },
             {
                 logo: 'https://m4.publicimg.browser.qq.com/publicimg/nav/qbtool/qbtool-latest.png',
@@ -2151,6 +2158,8 @@ const webList = ref([
                     </div>
                 </div>
             </div>
+
+            <div class="content-tip">最后更新时间：{{ lastUpdateTime }}</div>
         </div>
     </div>
 </template>
@@ -2205,7 +2214,11 @@ const webList = ref([
         }
     }
 }
-
+.content-tip {
+    font-size: 14px;
+    color: #666666;
+    text-align: right;
+}
 .list {
     > div {
         width: 100%;
