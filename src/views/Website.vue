@@ -144,6 +144,12 @@ const webList = ref([
                 slogan: '可导入Figma生成Html代码'
             },
             {
+                logo: '',
+                name: 'Devwares',
+                link: 'https://windframe.devwares.com',
+                slogan: '在线 Tailwind CSS 构建工具！'
+            },
+            {
                 logo: 'https://saasaitools.com/storage/2022/11/saasaitools_logo_white.png',
                 name: 'SaasAiTools',
                 link: 'https://saasaitools.com/',
@@ -160,6 +166,12 @@ const webList = ref([
                 name: 'Autodraw',
                 link: 'https://www.autodraw.com/',
                 slogan: '根据你的随意涂画生成简笔画'
+            },
+            {
+                logo: '',
+                name: 'Cgdream',
+                link: 'https://cgdream.ai/my-images',
+                slogan: '免费Ai生成图片'
             },
             {
                 logo: 'https://www.shejibaozang.com/wp-content/uploads/thumb/2023/05/fill_w60_h60_g0_mark_1684291596-%E4%B8%8B%E8%BD%BD-2.png',
