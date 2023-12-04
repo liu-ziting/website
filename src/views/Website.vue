@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, watch } from 'vue'
+import { useRoute } from 'vue-router'
 import { useSvgIcons } from '../lib/svgIcons'
 const { getSvgIcon } = useSvgIcons()
 const lastUpdateTime = ref('2023-11-29')
@@ -120,6 +121,12 @@ const webList = ref([
                 slogan: '媲美GPT，简洁易用的AI助手'
             },
             {
+                logo: 'https://kimi.moonshot.cn/static/Kimi.3857f0b5.png',
+                name: 'Kimi Chat',
+                link: 'https://kimi.moonshot.cn/',
+                slogan: '由清华大学交叉信息学院提供，支持文件上传，pdf、doc、xlsx、ppt、txt等'
+            },
+            {
                 logo: 'https://llava.hliu.cc/assets/logo-0a070fcf.svg',
                 name: 'LLaVA',
                 link: 'https://llava.hliu.cc/',
@@ -147,7 +154,7 @@ const webList = ref([
                 logo: '',
                 name: 'Devwares',
                 link: 'https://windframe.devwares.com',
-                slogan: '在线 Tailwind CSS 构建工具！'
+                slogan: '在线TailwindCSS 构建工具！'
             },
             {
                 logo: 'https://saasaitools.com/storage/2022/11/saasaitools_logo_white.png',
@@ -202,6 +209,18 @@ const webList = ref([
                 name: 'ChatGPTAPI水龙头',
                 link: 'https://faucet.openkey.cloud/',
                 slogan: '每24小时可领取一个$1.00令牌用于开发测试 AI 产品.'
+            },
+            {
+                logo: 'https://www.ttson.cn/assets/laba.cdedf554.png',
+                name: 'TTS-Online',
+                link: 'https://www.ttson.cn/',
+                slogan: '免费文字转语音，3000以内，支持多类型人声'
+            },
+            {
+                logo: 'https://www.ttson.cn/assets/laba.cdedf554.png',
+                name: 'ttson',
+                link: 'https://acgn.ttson.cn/',
+                slogan: '免费文字转语音，原神、英雄联盟、星穹铁道和日漫1000+角色'
             }
         ]
     },
@@ -477,6 +496,50 @@ const webList = ref([
         ]
     }
 ])
+
+const searchShow = ref(false)
+interface WebItem {
+    logo: string
+    name: string
+    link: string
+    slogan: string
+}
+
+const search = ref('')
+interface WebCategory {
+    title: string
+    list: WebItem[]
+}
+
+const route = useRoute()
+// 在组件加载时立即执行一次搜索，以防初始 URL 中有查询参数
+if (route.path === '/website' && route.query.key) {
+    search.value = route.query.key as string
+    setTimeout(() => {
+        handleSearch()
+    }, 1000)
+}
+// 侦听路由变化
+watch(
+    () => route.query.key,
+    newKey => {
+        if (route.path === '/website') {
+            search.value = newKey as string
+            handleSearch()
+        }
+    }
+)
+const filteredList = ref<WebCategory[]>([])
+function handleSearch() {
+    filteredList.value = webList.value
+        .map(category => ({
+            ...category,
+            list: category.list.filter(item => item.slogan.includes(search.value))
+        }))
+        .filter(category => category.list.length > 0)
+
+    searchShow.value = true
+}
 </script>
 <template>
     <div class="website">
@@ -485,10 +548,6 @@ const webList = ref([
                 <div class="content-header-inner">
                     <h1 class="content-header-title">常用优秀网站收藏<br />Website</h1>
                     <div class="content-header-info">项目部署、UI设计、社区、AI、演示、图标库...</div>
-                    <!-- <a target="_blank" href="https://lztweb.netlify.app/" class="small">
-                        <div class="icon" v-html="getSvgIcon('Right')"></div>
-                        lztweb.netlify.app</a
-                    > -->
                     <div class="content-header-text">* 如遇网站加载慢或打不开，则需要科学上网</div>
                 </div>
                 <div class="content-header-illustration">
@@ -2150,7 +2209,28 @@ const webList = ref([
                     </svg>
                 </div>
             </div>
-            <div class="list">
+            <div class="list" v-if="searchShow">
+                <div v-for="(box, index) in filteredList" :key="index">
+                    <h1>{{ box.title }}</h1>
+                    <div class="cards" v-for="(item, index) in box.list" :key="index">
+                        <a :href="item.link" target="_blank">
+                            <div class="head">
+                                <div class="logo">
+                                    <img v-if="item.logo" :src="item.logo" />
+                                    <span v-else>{{ item.name.slice(0, 4) }}</span>
+                                </div>
+                                <div class="icon" v-html="getSvgIcon('Right')"></div>
+                            </div>
+                            <div>
+                                <h3>{{ item.name }}</h3>
+                                <p>{{ item.slogan }}</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list" v-if="!searchShow">
                 <div v-for="(box, index) in webList" :key="index">
                     <h1>{{ box.title }}</h1>
                     <div class="cards" v-for="(item, index) in box.list" :key="index">
@@ -2281,6 +2361,11 @@ const webList = ref([
             color: #6d7680;
             line-height: 20px;
             height: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
 
         & a {
@@ -2307,6 +2392,43 @@ const webList = ref([
                 width: 24px;
             }
         }
+    }
+}
+
+.header-search {
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search-field {
+    border-radius: 99em;
+    background-color: #f0f4f5;
+    border: none;
+    padding-left: 2.75rem;
+    height: 3rem;
+    transition: width 380ms ease;
+    width: 250px;
+    &:focus {
+        width: 400px;
+    }
+}
+
+.search-btn {
+    border: none;
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .icon {
+        width: 24px;
+        color: #abb5bd;
+        margin-top: 4px;
     }
 }
 </style>

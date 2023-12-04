@@ -13,11 +13,16 @@ const { getSvgIcon } = useSvgIcons()
 const isRouteActive = (to: string) => {
     return route.path === to
 }
+import router from './router'
 
 import MobileNav from './components/MobileNav.vue'
-
+const key = ref('')
 const handleEnterKey = () => {
-    alert('暂不支持搜索~ 再等等！')
+    // 将数据传递给路由/website
+    router.push({
+        path: '/website',
+        query: { key: key.value }
+    })
 }
 </script>
 
@@ -31,7 +36,13 @@ const handleEnterKey = () => {
                 </h1>
                 <div class="header-content">
                     <div class="header-search">
-                        <input @keyup.enter="handleEnterKey" type="text" class="search-field" placeholder="Search..." />
+                        <input
+                            v-model="key"
+                            @keyup.enter="handleEnterKey"
+                            type="text"
+                            class="search-field"
+                            placeholder="Search..."
+                        />
                         <button type="submit" class="search-btn">
                             <div class="icon" v-html="getSvgIcon('Search')"></div>
                         </button>
