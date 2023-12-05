@@ -256,6 +256,12 @@ const website: Web[] = [
                 name: 'huggingface',
                 link: 'https://huggingface.co/',
                 slogan: '人工智能社区,机器学习社区在模型数据集和应用程序上进行协作的平台'
+            },
+            {
+                logo: '',
+                name: 'devv',
+                link: 'https://devv.ai/zh',
+                slogan: '最懂程序员的新一代 AI 搜索引擎'
             }
         ]
     },

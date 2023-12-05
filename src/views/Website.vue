@@ -1731,6 +1731,7 @@ function handleSearch() {
                     </svg>
                 </div>
             </div>
+
             <div class="list" v-if="searchShow">
                 <div v-for="(box, index) in filteredList" :key="index">
                     <h1>{{ box.title }}</h1>

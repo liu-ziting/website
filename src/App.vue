@@ -18,11 +18,15 @@ import router from './router'
 import MobileNav from './components/MobileNav.vue'
 const key = ref('')
 const handleEnterKey = () => {
-    // 将数据传递给路由/website
-    router.push({
-        path: '/website',
-        query: { key: key.value }
-    })
+    if (route.path === '/website') {
+        // 将数据传递给路由/website
+        router.push({
+            path: '/website',
+            query: { key: key.value }
+        })
+    } else {
+        window.open('https://devv.ai/zh/search/' + key.value + '?lang=zh')
+    }
 }
 </script>
 

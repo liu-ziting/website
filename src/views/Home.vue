@@ -20,11 +20,11 @@ const openLayer = (url: string, type: boolean) => {
                     <div class="content-header-info">- 这里是一个收集平时常用网站合集以及个人知识整理的个人站点.</div>
                     <div class="content-header-info">- 本站点Vue3 + Vite + TypeScript 技术栈进行构建</div>
                     <div class="content-header-info">- 并通过 Netlify 进行部署</div>
-                    <div class="content-header-info">
+                    <!-- <div class="content-header-info">
                         - 历史站点：<a class="link" href="https://lztweb.netlify.app/" target="_blank"
                             >lztweb.netlify.app</a
                         >
-                    </div>
+                    </div> -->
                     <div class="content-header-info" @click="openLayer('https://excalidraw.com', true)">
                         <a class="link" href="javascript:;">
                             <svg
@@ -44,18 +44,6 @@ const openLayer = (url: string, type: boolean) => {
                             来灵感了，画下来~
                         </a>
                     </div>
-                    <!-- <div class="content-header-info">
-                        <a
-                            href="https://www.producthunt.com/posts/1-7f5cfcd5-d7c7-47e0-99ba-69c4189cb10e?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-1&#0045;7f5cfcd5&#0045;d7c7&#0045;47e0&#0045;99ba&#0045;69c4189cb10e"
-                            target="_blank"
-                            ><img
-                                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=426800&theme=light"
-                                alt="刘子亭的个人博客 - 这里是一个收集平时常用网站合集以及个人知识整理的个人站点 | Product Hunt"
-                                style="width: 250px; height: 54px"
-                                width="250"
-                                height="54"
-                        /></a>
-                    </div> -->
                 </div>
                 <div class="content-header-illustration">
                     <img src="@/assets/tx.png" />
