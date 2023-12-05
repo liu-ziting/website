@@ -50,10 +50,8 @@ function handleSearch() {
     }
     // 转换为小写进行比较
     const lowerCaseSearch = trimmedSearch.toLowerCase()
-    // 仅遍历一次数组，并提供初始值 []
     filteredList.value = webList.value.reduce<WebCategory[]>((acc, category) => {
         const filteredItems = category.list.filter(item => item.slogan.toLowerCase().includes(lowerCaseSearch))
-        // 如果存在匹配项，则添加到累加器中
         if (filteredItems.length > 0) {
             acc.push({
                 ...category,
@@ -61,7 +59,7 @@ function handleSearch() {
             })
         }
         return acc
-    }, []) // 注意这里的初始值 []
+    }, [])
     searchShow.value = true
 }
 </script>
