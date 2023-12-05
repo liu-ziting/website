@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import PopupLayer from '@/components/PopupLayer.vue'
+// import ChristmasBox from '@/components/ChristmasBox.vue'
 import { ref } from 'vue'
 const popupLayer = ref()
 const openLayer = (url: string, type: boolean) => {
@@ -12,6 +13,7 @@ const openLayer = (url: string, type: boolean) => {
 </script>
 <template>
     <div class="home">
+        <!-- <ChristmasBox /> -->
         <div class="content">
             <div class="content-header">
                 <div class="content-header-inner">
@@ -96,12 +98,5 @@ const openLayer = (url: string, type: boolean) => {
         max-height: 400px;
         margin-top: -40px;
     }
-}
-
-footer {
-    width: 100%;
-    float: left;
-    text-align: center;
-    margin-top: 100px;
 }
 </style>

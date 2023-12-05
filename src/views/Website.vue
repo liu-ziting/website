@@ -50,12 +50,21 @@ function handleSearch() {
     }
     // 转换为小写进行比较
     const lowerCaseSearch = trimmedSearch.toLowerCase()
+
     filteredList.value = webList.value.reduce<WebCategory[]>((acc, category) => {
-        const filteredItems = category.list.filter(item => item.slogan.toLowerCase().includes(lowerCaseSearch))
-        if (filteredItems.length > 0) {
+        // 首先根据 name 字段进行筛选
+        const filteredItemsByName = category.list.filter(item => item.name.toLowerCase().includes(lowerCaseSearch))
+        // 如果根据 name 没有找到，那么根据 slogan 字段进行筛选
+        const filteredItemsBySlogan =
+            filteredItemsByName.length > 0
+                ? filteredItemsByName
+                : category.list.filter(item => item.slogan.toLowerCase().includes(lowerCaseSearch))
+
+        // 如果有匹配的项，则添加到累加器中
+        if (filteredItemsBySlogan.length > 0) {
             acc.push({
                 ...category,
-                list: filteredItems
+                list: filteredItemsBySlogan
             })
         }
         return acc
