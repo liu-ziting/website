@@ -37,6 +37,23 @@
             src="https://myaskai.com/ev-embed-chat-js-min"
             id="0gexsMdq7nHZPtHatbwBMgfuLGgoyv"
         ></script> -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"
+        />
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"
+        ></script>
+        <script type="text/javascript">
+            algoliasearchNetlify({
+                appId: 'R8YVTBP6J9',
+                apiKey: 'b93279f44455a8e95f890fab52a0b78e',
+                siteId: '48f73b74-0a73-43b8-92dc-65bbe5457377',
+                branch: 'main',
+                selector: 'div#search'
+            })
+        </script>
     </head>
     <body>
         <div id="app"></div>

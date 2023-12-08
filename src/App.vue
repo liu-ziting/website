@@ -75,6 +75,8 @@ const handleEnterKey = () => {
                 </nav>
                 <!-- 主体 -->
                 <router-view></router-view>
+
+                <div id="search"></div>
             </main>
         </div>
     </div>

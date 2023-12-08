@@ -262,6 +262,12 @@ const website: Web[] = [
                 name: 'devv',
                 link: 'https://devv.ai/zh',
                 slogan: '最懂程序员的新一代 AI 搜索引擎'
+            },
+            {
+                logo: '',
+                name: 'mylens',
+                link: 'https://mylens.ai/',
+                slogan: '一句话让ai生成发展史'
             }
         ]
     },
@@ -539,12 +545,12 @@ const website: Web[] = [
 ]
 
 const movie: Movie[] = [
-    {
-        title: '好戏网',
-        tag: 'haoxi.vip',
-        link: 'https://haoxi.vip/',
-        img: pian1
-    },
+    // {
+    //     title: '好戏网',
+    //     tag: 'haoxi.vip',
+    //     link: 'https://haoxi.vip/',
+    //     img: pian1
+    // },
     {
         title: '搜片网',
         tag: 'soupian.pro',
