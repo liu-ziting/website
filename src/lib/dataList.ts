@@ -168,6 +168,12 @@ const website: Web[] = [
                 slogan: '谷歌人工智能助手'
             },
             {
+                logo: '',
+                name: 'Copilot',
+                link: 'https://copilot.microsoft.com/',
+                slogan: '微软人工智能助手'
+            },
+            {
                 logo: 'https://app.invictai.io/_next/image?url=https%3A%2F%2Fapi.invictai.io%2Fapi%2Fcommunity-template-images%2F1700492778406-809601882.png&w=256&q=75',
                 name: 'InvictaAI',
                 link: 'https://app.invictai.io/',
@@ -198,7 +204,7 @@ const website: Web[] = [
                 slogan: '在线TailwindCSS 构建工具！'
             },
             {
-                logo: 'https://saasaitools.com/storage/2022/11/saasaitools_logo_white.png',
+                logo: '',
                 name: 'SaasAiTools',
                 link: 'https://saasaitools.com/',
                 slogan: '发现您的下一个生成人工智能工具'
