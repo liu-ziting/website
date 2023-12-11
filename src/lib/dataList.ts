@@ -168,6 +168,12 @@ const website: Web[] = [
                 slogan: '谷歌人工智能助手'
             },
             {
+                logo: 'https://app.invictai.io/_next/image?url=https%3A%2F%2Fapi.invictai.io%2Fapi%2Fcommunity-template-images%2F1700492778406-809601882.png&w=256&q=75',
+                name: 'InvictaAI',
+                link: 'https://app.invictai.io/',
+                slogan: '个性化AI助手，能够根据用户需求进行定制化'
+            },
+            {
                 logo: 'https://chat.xlang.ai/_next/static/media/logo_color.1eecbbbd.svg',
                 name: 'xlang',
                 link: 'https://chat.xlang.ai/zh',
@@ -202,6 +208,12 @@ const website: Web[] = [
                 name: 'Seekai',
                 link: 'https://seekai.tools/ai-tools',
                 slogan: '轻松发现最佳 AI 工具'
+            },
+            {
+                logo: 'https://top.aibase.com/_static/img/Frame@2x.eddfa3e.png',
+                name: 'Aibase',
+                link: 'https://top.aibase.com',
+                slogan: '最佳人工智能产品和服务，每日持续更新'
             },
             {
                 logo: '',
@@ -557,12 +569,12 @@ const website: Web[] = [
 ]
 
 const movie: Movie[] = [
-    // {
-    //     title: '好戏网',
-    //     tag: 'haoxi.vip',
-    //     link: 'https://haoxi.vip/',
-    //     img: pian1
-    // },
+    {
+        title: '爱看剧',
+        tag: 'ikanju.vip',
+        link: 'https://www.ikanju.vip/',
+        img: pian1
+    },
     {
         title: '搜片网',
         tag: 'soupian.pro',
