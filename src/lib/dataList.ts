@@ -162,6 +162,12 @@ const website: Web[] = [
                 slogan: '大语言视觉助手'
             },
             {
+                logo: '',
+                name: 'Bard',
+                link: 'https://bard.google.com/chat',
+                slogan: '谷歌人工智能助手'
+            },
+            {
                 logo: 'https://chat.xlang.ai/_next/static/media/logo_color.1eecbbbd.svg',
                 name: 'xlang',
                 link: 'https://chat.xlang.ai/zh',
@@ -539,6 +545,12 @@ const website: Web[] = [
                 name: '腾讯帮小忙',
                 link: 'https://tool.browser.qq.com/',
                 slogan: '免费在线工具箱'
+            },
+            {
+                logo: '',
+                name: 'sms-activate',
+                link: 'https://sms-activate.org/cn/freePrice#activation',
+                slogan: '国外短信接码激活服务'
             }
         ]
     }
