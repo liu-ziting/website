@@ -436,19 +436,19 @@ const website: Web[] = [
                 slogan: 'cssAnimation动画在线编辑复制'
             },
             {
-                logo: 'https://codegeex.cn/static/logo_new.a2d17dc1.svg',
+                logo: '',
                 name: 'Codegeex',
                 link: 'https://codegeex.cn/',
                 slogan: 'CodeGeeX智能编程助手'
             },
             {
-                logo: 'https://code.sensetime.com/assets/logo_sm_light-4176b397.svg',
+                logo: '',
                 name: 'Raccoon',
                 link: 'https://code.sensetime.com/',
                 slogan: '商汤自研大语言模型的智能编程助手'
             },
             {
-                logo: 'https://img.alicdn.com/imgextra/i2/O1CN01PhjTAI1V5lSAZ1DMU_!!6000000002602-2-tps-1423-304.png',
+                logo: '',
                 name: 'TongyiLingma',
                 link: 'https://tongyi.aliyun.com/lingma/',
                 slogan: '阿里通义大模型旗下编程助手'
