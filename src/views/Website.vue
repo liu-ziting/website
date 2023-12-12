@@ -4,7 +4,7 @@ import { useRoute } from 'vue-router'
 import { useSvgIcons } from '../lib/svgIcons'
 import { website } from '../lib/dataList'
 const { getSvgIcon } = useSvgIcons()
-const lastUpdateTime = ref('2023-12-05')
+const lastUpdateTime = ref('2023-12-12')
 
 const webList = ref(website)
 

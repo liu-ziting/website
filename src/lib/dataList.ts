@@ -201,7 +201,7 @@ const website: Web[] = [
                 logo: '',
                 name: 'Devwares',
                 link: 'https://windframe.devwares.com',
-                slogan: '在线TailwindCSS 构建工具！'
+                slogan: '在线TailwindCSS构建工具！'
             },
             {
                 logo: '',
@@ -213,7 +213,7 @@ const website: Web[] = [
                 logo: 'https://seekai.tools/static/media/new_logo.829b4ad1dcd3942080932c3c4c30d090.svg',
                 name: 'Seekai',
                 link: 'https://seekai.tools/ai-tools',
-                slogan: '轻松发现最佳 AI 工具'
+                slogan: '轻松发现最佳AI工具'
             },
             {
                 logo: 'https://top.aibase.com/_static/img/Frame@2x.eddfa3e.png',
@@ -226,6 +226,12 @@ const website: Web[] = [
                 name: 'Autodraw',
                 link: 'https://www.autodraw.com/',
                 slogan: '根据你的随意涂画生成简笔画'
+            },
+            {
+                logo: '',
+                name: 'Freepik',
+                link: 'https://www.freepik.com/pikaso?ref=producthunt&sign-up=google',
+                slogan: '实时AI图像生成器'
             },
             {
                 logo: '',
@@ -261,7 +267,7 @@ const website: Web[] = [
                 logo: 'https://faucet.openkey.cloud/_next/image?url=%2Flogo.png&w=256&q=75',
                 name: 'ChatGPTAPI水龙头',
                 link: 'https://faucet.openkey.cloud/',
-                slogan: '每24小时可领取一个$1.00令牌用于开发测试 AI 产品.'
+                slogan: '每24小时可领取一个$1.00令牌用于开发测试AI产品.'
             },
             {
                 logo: 'https://www.ttson.cn/assets/laba.cdedf554.png',
@@ -285,13 +291,13 @@ const website: Web[] = [
                 logo: '',
                 name: 'devv',
                 link: 'https://devv.ai/zh',
-                slogan: '最懂程序员的新一代 AI 搜索引擎'
+                slogan: '最懂程序员的新一代AI搜索引擎'
             },
             {
                 logo: '',
                 name: 'mylens',
                 link: 'https://mylens.ai/',
-                slogan: '一句话让ai生成发展史'
+                slogan: '一句话让AI生成发展史'
             },
             {
                 logo: '',
