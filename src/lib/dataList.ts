@@ -292,6 +292,12 @@ const website: Web[] = [
                 name: 'mylens',
                 link: 'https://mylens.ai/',
                 slogan: '一句话让ai生成发展史'
+            },
+            {
+                logo: '',
+                name: 'Graphy',
+                link: 'https://graphy.app/',
+                slogan: '通过数据创建精美的多类型的交互式图表'
             }
         ]
     },
