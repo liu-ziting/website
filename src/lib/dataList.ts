@@ -409,7 +409,7 @@ const website: Web[] = [
         ]
     },
     {
-        title: '代码片段',
+        title: '代码/编程',
         list: [
             {
                 logo: 'https://logo.clearbit.com/codepen.io',
@@ -434,6 +434,30 @@ const website: Web[] = [
                 name: 'Animista',
                 link: 'https://animista.net/play/basic/flip-scale-2',
                 slogan: 'cssAnimation动画在线编辑复制'
+            },
+            {
+                logo: 'https://codegeex.cn/static/logo_new.a2d17dc1.svg',
+                name: 'Codegeex',
+                link: 'https://codegeex.cn/',
+                slogan: 'CodeGeeX智能编程助手'
+            },
+            {
+                logo: 'https://code.sensetime.com/assets/logo_sm_light-4176b397.svg',
+                name: 'Raccoon',
+                link: 'https://code.sensetime.com/',
+                slogan: '商汤自研大语言模型的智能编程助手'
+            },
+            {
+                logo: 'https://img.alicdn.com/imgextra/i2/O1CN01PhjTAI1V5lSAZ1DMU_!!6000000002602-2-tps-1423-304.png',
+                name: 'TongyiLingma',
+                link: 'https://tongyi.aliyun.com/lingma/',
+                slogan: '阿里通义大模型旗下编程助手'
+            },
+            {
+                logo: 'https://logo.clearbit.com/github.com',
+                name: 'GithubCopilot',
+                link: 'https://github.com/features/copilot',
+                slogan: 'Github与OpenAI共同推出了一款AI编程工具'
             }
         ]
     },
