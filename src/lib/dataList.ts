@@ -449,6 +449,12 @@ const website: Web[] = [
             },
             {
                 logo: '',
+                name: 'Codeium',
+                link: 'https://codeium.com/',
+                slogan: '免费的智能编程助手'
+            },
+            {
+                logo: '',
                 name: 'TongyiLingma',
                 link: 'https://tongyi.aliyun.com/lingma/',
                 slogan: '阿里通义大模型旗下编程助手'
