@@ -22,6 +22,9 @@ const openLayer = (url: string, type: boolean) => {
                     <div class="content-header-info">- 这里是一个收集平时常用网站合集以及个人知识整理的个人站点.</div>
                     <div class="content-header-info">- 本站点Vue3 + Vite + TypeScript 技术栈进行构建</div>
                     <div class="content-header-info">- 并通过 Netlify 进行部署</div>
+                    <div class="content-header-info">
+                        - 更多AI工具集： <a class="link" href="https://tools.smartai.wtf/" target="_blank">SmartAI</a>
+                    </div>
                     <!-- <div class="content-header-info">
                         - 历史站点：<a class="link" href="https://lztweb.netlify.app/" target="_blank"
                             >lztweb.netlify.app</a
